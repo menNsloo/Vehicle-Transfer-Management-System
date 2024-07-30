@@ -34,6 +34,19 @@ Note:
 2.Update the API endpoints in the frontend code (http://localhost:3001) if backend server runs on a different port or URL.
 3.Adjust the database connection settings in src/app.module.ts to match PostgreSQL configuration.
 
+## Future Extension plan ##
+
+To extend the vehicle transfer system to support transfers to entities other than drivers, you should:
+
+* Database Schema: Introduce a TransferTarget table to store different entities (e.g., drivers, companies) with columns for id, target_type, and target_id.
+* Transfer Table: Modify the transfers table to reference TransferTarget instead of directly referencing drivers, by adding from_target_id and to_target_id columns.
+* Entities: Update the Transfer entity to include from_target and to_target relationships, pointing to TransferTarget.
+* Services: Adjust the transfer service logic to handle various target types by looking up TransferTarget records.
+* Controllers: Update the transfer controller to accept target type and ID, creating or fetching the appropriate TransferTarget records.
+* Frontend Forms: Modify the frontend forms to allow selection of different target types (e.g., dropdowns for drivers, companies).
+* Future Flexibility: Ensure that the logic is generic enough to add new target types without major changes, focusing on dynamic handling of target_type.
+
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
