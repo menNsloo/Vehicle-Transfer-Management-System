@@ -25,9 +25,7 @@
 ## Overview
 The Vehicle Transfer Management System (VTMS) is built using Next.js for the frontend, Nest.js for the backend, and PostgreSQL for the database. This system manages a catalog of drivers and vehicles, allowing you to transfer vehicles between drivers while keeping a record of all transfers.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-Tech Stack
+Tech Stack:
 * Frontend: Next.js
 * Backend: Nest.js
 * Database: PostgreSQL
