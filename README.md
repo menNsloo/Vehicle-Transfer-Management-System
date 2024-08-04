@@ -22,18 +22,25 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Overview
+The Vehicle Transfer Management System (VTMS) is built using Next.js for the frontend, Nest.js for the backend, and PostgreSQL for the database. This system manages a catalog of drivers and vehicles, allowing you to transfer vehicles between drivers while keeping a record of all transfers.
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+
+Tech Stack
+* Frontend: Next.js
+* Backend: Nest.js
+* Database: PostgreSQL
+* Language: TypeScript
 
 Accessing the Application
 Open your browser and navigate to http://localhost:3000. You should see the homepage with links to manage drivers, vehicles, and transfers
 
 Note:
-1.Ensure the backend server is running before accessing the frontend.
-2.Update the API endpoints in the frontend code (http://localhost:3001) if backend server runs on a different port or URL.
-3.Adjust the database connection settings in src/app.module.ts to match PostgreSQL configuration.
-
+* 1.Ensure the backend server is running before accessing the frontend.
+* 2.Update the API endpoints in the frontend code (http://localhost:3001) if backend server runs on a different port or URL.
+* 3.Adjust the database connection settings in src/app.module.ts to match PostgreSQL configuration.
+  
 ## Future Extension plan ##
 
 To extend the vehicle transfer system to support transfers to entities other than drivers, you should:
