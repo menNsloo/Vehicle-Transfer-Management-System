@@ -50,12 +50,3 @@ To extend the vehicle transfer system to support transfers to entities other tha
 * Controllers: Update the transfer controller to accept target type and ID, creating or fetching the appropriate TransferTarget records.
 * Frontend Forms: Modify the frontend forms to allow selection of different target types (e.g., dropdowns for drivers, companies).
 * Future Flexibility: Ensure that the logic is generic enough to add new target types without major changes, focusing on dynamic handling of target_type.
-
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## License
-
-Nest is [MIT licensed](LICENSE).
